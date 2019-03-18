@@ -47,6 +47,7 @@ class NavBar extends Component {
                                     <NavLink
                                         href="#"
                                         onClick={() => this.props.history.push('/')}
+                                        className={this.props.history.location.pathname === '/' ? "nav-active" : "nav-normal"}
                                     >
                                         Home
                                     </NavLink>
@@ -55,6 +56,7 @@ class NavBar extends Component {
                                     <NavLink
                                         href="#"
                                         onClick={() => this.props.history.push('/portfolio')}
+                                        className={this.props.history.location.pathname === '/portfolio' ? "nav-active" : "nav-normal"}
                                     >
                                         Portfolio
                                     </NavLink>

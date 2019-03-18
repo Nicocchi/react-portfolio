@@ -126,3 +126,11 @@
 .overlay-sub {
   color: #E31B6D;
 }
+
+.nav-active {
+  border-bottom: 2px solid #E31B6D;
+}
+
+.nav-normal {
+  text-decoration: none;
+}
