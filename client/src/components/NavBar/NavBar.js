@@ -53,8 +53,8 @@ class NavBar extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
-                                        href="#pablo"
-                                        onClick={() => this.props.history.push('/')}
+                                        href="#"
+                                        onClick={() => this.props.history.push('/portfolio')}
                                     >
                                         Portfolio
                                     </NavLink>
@@ -73,6 +73,14 @@ class NavBar extends Component {
                                         onClick={() => this.props.history.push('/')}
                                     >
                                         About
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink
+                                        href="#pablo"
+                                        onClick={() => this.props.history.push('/')}
+                                    >
+                                        Contact
                                     </NavLink>
                                 </NavItem>
                             </Nav>

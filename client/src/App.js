@@ -4,6 +4,12 @@ import './App.css';
 import Home from "./pages/home/home";
 import NavBar from "./components/NavBar/NavBar";
 import Particles from "react-particles-js";
+import Portfolio from "./pages/portfolio/portfolio";
+
+import {
+    CSSTransition,
+    TransitionGroup,
+} from 'react-transition-group';
 
 const particleOpt = {
     "particles": {
@@ -66,9 +72,21 @@ class App extends Component {
               style={{position: "absolute", left: "0", top: "0", width: "100%", height: "100%", zIndex: "-1 !important"}}
           />
           <NavBar history={this.props.history}/>
-        <Switch>
-          <Route exact path='/' component={Home} />
-        </Switch>
+          <Route render={({location}) => (
+              <TransitionGroup>
+                  <CSSTransition
+                      key={location.key}
+                      timeout={300}
+                      classNames="fade"
+                  >
+                      <Switch location={location}>
+                          <Route exact path='/' component={Home} />
+                          <Route path="/portfolio" component={Portfolio} />
+                      </Switch>
+                  </CSSTransition>
+              </TransitionGroup>
+          )}/>
+
       </div>
     );
   }

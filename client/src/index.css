@@ -64,16 +64,3 @@ html, body {
   background-image: url("../src/assets/img/dots.png");
   background-size: contain;
 }
-
-/* Style the video: 100% width and height to cover the entire window */
-#video-background {
-  /*  making the video fullscreen  */
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-}
