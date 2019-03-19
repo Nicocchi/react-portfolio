@@ -77,7 +77,7 @@
 
 .lightbox.container {
   position: relative;
-  width: 33%;
+  width: 50%;
   margin: 0;
   padding: 0;
 }
@@ -133,4 +133,14 @@
 
 .nav-normal {
   text-decoration: none;
+}
+
+.d-block.w-100 {
+  padding: 0 !important;
+  border-radius: 0;
+  /*height: 350px;*/
+}
+
+.modal-dialog {
+  /*margin-top: -5% !important;*/
 }
