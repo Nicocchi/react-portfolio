@@ -11,19 +11,7 @@ const projects = [
             {
                 src:
                     "https://i.ibb.co/Cbf6yZH/discord.jpg",
-                altText: "Slide 1",
-                caption: ""
-            },
-            {
-                src:
-                    "https://i.ibb.co/Cbf6yZH/discord.jpg",
-                altText: "Slide 2",
-                caption: ""
-            },
-            {
-                src:
-                    "https://i.ibb.co/Cbf6yZH/discord.jpg",
-                altText: "Slide 3",
+                altText: "Discord logo",
                 caption: ""
             }
         ],
@@ -41,19 +29,7 @@ const projects = [
             {
                 src:
                     "https://i.ibb.co/cbbgYX1/shoptrak-header.png",
-                altText: "Slide 1",
-                caption: ""
-            },
-            {
-                src:
-                    "https://i.ibb.co/cbbgYX1/shoptrak-header.png",
-                altText: "Slide 2",
-                caption: ""
-            },
-            {
-                src:
-                    "https://i.ibb.co/cbbgYX1/shoptrak-header.png",
-                altText: "Slide 3",
+                altText: "Homepage header",
                 caption: ""
             }
         ],
