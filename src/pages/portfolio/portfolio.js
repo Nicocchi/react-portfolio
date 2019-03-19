@@ -23,20 +23,38 @@ const projects = [
     },
     {
         name: "ShopTrak",
-        headerImg: "https://i.ibb.co/cbbgYX1/shoptrak-header.png",
+        headerImg: "https://i.ibb.co/CVsK4MS/Screenshot-from-2019-03-19-19-34-28.png",
         tech: "Node.js, Express.js, React, Redux, JavaScript",
         images: [
             {
                 src:
-                    "https://i.ibb.co/cbbgYX1/shoptrak-header.png",
+                    "https://i.ibb.co/CVsK4MS/Screenshot-from-2019-03-19-19-34-28.png",
                 altText: "Homepage header",
                 caption: ""
             }
         ],
         desc: "React application to create groups of shopping lists to track who has purchased what items at what price.\n" +
             "\n" +
-            "Built with JavaScript, Node.js and Express.js on the back-end, React, Redux on the front-end.",
+            "Built with JavaScript, Node.js, Express.js, React, Redux",
         sub: "Peer Guide Shopping",
+        URL: "http://labs10-shopping-list.netlify.com/"
+    },
+    {
+        name: "Creative Writer",
+        headerImg: "https://i.ibb.co/wSkV77H/Screenshot-from-2019-03-15-16-16-11.png",
+        tech: "Electron, React, Redux, JavaScript",
+        images: [
+            {
+                src:
+                    "https://i.ibb.co/wSkV77H/Screenshot-from-2019-03-15-16-16-11.png",
+                altText: "Homepage header",
+                caption: ""
+            }
+        ],
+        desc: "Free and open source customizable writing application to write novels, games, or scripts.\n" +
+            "\n" +
+            "Built with JavaScript, Electron, Node.js, React, Redux",
+        sub: "Writing Application",
         URL: "http://labs10-shopping-list.netlify.com/"
     }
 ]
