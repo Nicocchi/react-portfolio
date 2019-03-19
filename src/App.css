@@ -103,6 +103,7 @@
 
 .lightbox.container:hover .overlay {
   opacity: 1;
+  cursor: default;
 }
 
 .text {

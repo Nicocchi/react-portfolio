@@ -7,7 +7,7 @@ import "./index.css";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/css/blk-design-system-react.css";
 import "./assets/css/nucleo-icons.css";
-// import "./assets/scss/blk-design-system-react.scss?v=1.0.0";
+import "./assets/scss/blk-design-system-react.scss?v=1.0.0";
 import "./assets/demo/demo.css";
 
 // Router
