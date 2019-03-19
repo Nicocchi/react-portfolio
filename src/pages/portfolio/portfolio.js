@@ -51,7 +51,7 @@ const projects = [
                 caption: ""
             }
         ],
-        desc: "Free and open source customizable writing application to write novels, games, or scripts.\n" +
+        desc: "Free and open source customizable writing application to write novels, game stories, or comic/movie scripts.\n" +
             "\n" +
             "Built with JavaScript, Electron, Node.js, React, Redux",
         sub: "Writing Application",
