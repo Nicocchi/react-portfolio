@@ -76,7 +76,7 @@ class App extends Component {
               <TransitionGroup>
                   <CSSTransition
                       key={location.key}
-                      timeout={300}
+                      timeout={500}
                       classNames="fade"
                   >
                       <Switch location={location}>

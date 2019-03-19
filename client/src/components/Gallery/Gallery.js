@@ -6,7 +6,7 @@ const Gallery = props => {
         <div>
             <CardDeck style={{ display: "flex", justifyContent: "center", width: "100%" }}>
                 {props.list.map((itm, i) => (
-                    <div className="lightbox container" onClick={props.clickHandler ? () => props.clickHandler(itm.name) : null}>
+                    <div className="lightbox container" style={{cursor: "pointer"}} onClick={props.clickHandler ? () => props.clickHandler(itm.name) : null}>
                     <img
                         src="http://findmatthew.com/img/thumb-1.jpg"
                         alt="Card image cap"

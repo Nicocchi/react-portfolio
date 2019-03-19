@@ -10,7 +10,10 @@ class Portfolio extends Component {
     render() {
         return (
             <div className={"page"}>
-                <h1>Projects</h1>
+                <div style={{display: "flex", justifyContent: "center", flexDirection: "column"}}>
+                    <h1>PROJECTS</h1>
+                    <hr style={{borderBottom: "2px solid #E31B6D", width: "5%", marginLeft: "47.5%", marginTop: "-10px"}} />
+                </div>
                 <Container style={{display: "flex", alignItems: "center", justifyContent: "center", marginTop: "5%"}}>
                     <Gallery name="Projects" clickHandler={""} list={[{name: "Cras justo odio"},{name: "Cras justo odio"}, {name: "Dapibus ac facilisis in"}, {name: "Morbi leo risus"}, {name: "Porta ac consectetur ac"}, {name: "Vestibulum at eros"}]} />
                 </Container>
