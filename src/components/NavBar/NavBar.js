@@ -63,24 +63,27 @@ class NavBar extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
-                                        href="#pablo"
-                                        onClick={() => this.props.history.push('/')}
+                                        href="#"
+                                        onClick={() => this.props.history.push('/blog')}
+                                        className={this.props.history.location.pathname === '/blog' ? "nav-active" : "nav-normal"}
                                     >
                                         Blog
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
-                                        href="#pablo"
-                                        onClick={() => this.props.history.push('/')}
+                                        href="#"
+                                        onClick={() => this.props.history.push('/about')}
+                                        className={this.props.history.location.pathname === '/about' ? "nav-active" : "nav-normal"}
                                     >
                                         About
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
-                                        href="#pablo"
-                                        onClick={() => this.props.history.push('/')}
+                                        href="#"
+                                        onClick={() => this.props.history.push('/contact')}
+                                        className={this.props.history.location.pathname === '/contact' ? "nav-active" : "nav-normal"}
                                     >
                                         Contact
                                     </NavLink>
