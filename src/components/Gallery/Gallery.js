@@ -1,22 +1,10 @@
 import React, { Component } from "react";
 import {
-  CardImg,
-  CardTitle,
   CardDeck,
-  CardBody,
   Button,
   Modal,
-  ModalBody,
-    Form,
-    FormGroup,
-    InputGroup,
-    InputGroupAddon,
-    InputGroupText,
-    Input,
-    Label,
     UncontrolledCarousel
 } from "reactstrap";
-import classnames from "classnames";
 
 class Gallery extends Component {
     state = {
@@ -38,7 +26,6 @@ class Gallery extends Component {
     }
 
     setItem = item => {
-        console.log(item);
         this.setState({ item })
     }
 
@@ -63,7 +50,7 @@ class Gallery extends Component {
                         >
                             <img
                                 src={`${itm.headerImg}`}
-                                alt="Card image cap"
+                                alt="Card cap"
                                 className="image"
                             />
                             <div className="overlay">

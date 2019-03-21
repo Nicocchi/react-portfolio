@@ -5,8 +5,7 @@ import { connect } from "react-redux";
 import { getBlogPosts } from '../../store/actions';
 import moment from 'moment';
 
-import {Link, RichText, Date} from 'prismic-reactjs';
-
+import { RichText } from 'prismic-reactjs';
 
 const linkResolver = function(doc){
 

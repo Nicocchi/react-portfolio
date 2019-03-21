@@ -7,8 +7,6 @@ import {
     Card,
     CardText,
     Button,
-    Modal,
-    UncontrolledCarousel
 } from "reactstrap";
 import moment from 'moment';
 
@@ -22,7 +20,7 @@ class BlogGallery extends Component {
                 >
 
                     {this.props.list.map((itm, i) => (
-                        <div className="lightbox-blog">
+                        <div key={i} className="lightbox-blog">
                             <Card>
                                 <CardImg top width="100%" src={`${itm.headerImg}`} alt="Card image cap" />
                                 <CardBody>

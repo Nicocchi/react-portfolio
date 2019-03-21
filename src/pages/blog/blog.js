@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Container, Button } from "reactstrap";
+import { Container } from "reactstrap";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { getBlogPosts } from '../../store/actions';

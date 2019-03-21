@@ -4,11 +4,6 @@ import {
     Card,
     CardHeader,
     CardBody,
-    Label,
-    FormGroup,
-    Form,
-    Input,
-    FormText,
     NavItem,
     NavLink,
     Nav,
@@ -18,8 +13,7 @@ import {
     Container,
     Row,
     Col,
-    UncontrolledTooltip,
-    UncontrolledCarousel
+    UncontrolledTooltip
 } from "reactstrap";
 import classnames from "classnames";
 

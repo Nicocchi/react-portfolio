@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import {
     Collapse,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    UncontrolledDropdown,
     NavbarBrand,
     Navbar,
     NavItem,
@@ -12,7 +8,6 @@ import {
     Nav,
     Container,
 } from "reactstrap";
-import SideNav, { Toggle, Nav as Nav1, NavItem as NavItem2, NavIcon, NavText, ClickOutside } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 class NavBar extends Component {

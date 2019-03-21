@@ -32,6 +32,7 @@
 
 .lightbox {
   /*height: 300px;*/
+  /*width: 30px !important;*/
 }
 
 .lightbox-blog {
@@ -54,35 +55,25 @@
   height: 100%;
 }
 
-.container-blog {
-  /*width: 200px;*/
-  /*height: 300px;*/
-}
-
 .lightbox-blog.container-blog {
   position: relative;
-  /*width: 200px;*/
-  /*height: 300px;*/
   margin: 0;
   padding: 0;
 }
-
-/*.lightbox:hover {*/
-  /*background-color: rgba(65,65,65, 0.4);*/
-/*}*/
 
 .lightbox.container {
   position: relative;
-  width: 50%;
-  /*height: 200px;*/
+  width: 30%;
+  /*height: 100%;*/
   margin: 0;
   padding: 0;
+    margin: 1%;
 }
 
 .image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .overlay {

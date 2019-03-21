@@ -2,10 +2,12 @@ import {
     TEST,
     GET_WORKS,
     SAVE_WORKS,
+    GET_PROJECTS,
+    SAVE_PROJECTS
 } from "../actions/";
 
 const initialState = {
-    project: null,
+    projects: null,
     posts: null,
 };
 
@@ -21,6 +23,15 @@ export const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 posts: action.payload
+            }
+
+        case GET_PROJECTS:
+            return state;
+
+        case SAVE_PROJECTS:
+            return {
+                ...state,
+                projects: action.payload
             }
 
         default:
