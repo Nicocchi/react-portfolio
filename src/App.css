@@ -5,6 +5,8 @@
   right: 0;
   bottom: 0;
   text-align: center;
+  scrollbar-color: rebeccapurple transparent;
+  scrollbar-width: thin;
 }
 
 .fade-appear
@@ -197,4 +199,8 @@
 
 .page {
   overflow: auto;
+}
+
+.card-header img {
+  margin-top: 20px;
 }
