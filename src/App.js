@@ -12,6 +12,7 @@ import {
 } from 'react-transition-group';
 import Contact from "./pages/contact/contact";
 import About from "./pages/about/about";
+import Blog from "./pages/blog/blog";
 
 const particleOpt = {
     "particles": {
@@ -86,6 +87,7 @@ class App extends Component {
                           <Route path="/portfolio" component={Portfolio} />
                           <Route path="/contact" component={Contact} />
                           <Route path="/about" component={About} />
+                          <Route path="/blog" component={Blog} />
                       </Switch>
                   </CSSTransition>
               </TransitionGroup>
