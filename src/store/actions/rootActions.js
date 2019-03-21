@@ -81,7 +81,7 @@ export const getProjects = () => dispatch => {
                     const proj = {
                         name: project.data.title[0].text,
                         headerImg: project.data.header.url,
-                        tech: project.data.technology[0].text,
+                        tech: project.data.technology,
                         images: [
                             {
                                 src: project.data.image1.url,
