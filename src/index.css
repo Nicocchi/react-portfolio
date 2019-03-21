@@ -14,7 +14,8 @@ code {
 }
 
 html, body {
-  overflow: hidden;
+  /*overflow-y: scroll;*/
+  overflow-x: hidden;
   background-color: #252627;
   height: 100%;
   background-image: url("../src/assets/img/dots.png");
@@ -24,22 +25,30 @@ html, body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  /*background: #f1f1f1;*/
+  background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  /*background: #888;*/
+  background: rebeccapurple;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-resizer {
+  background: transparent;
 }
 
 .subnavitem::before {
