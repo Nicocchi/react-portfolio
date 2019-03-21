@@ -45,7 +45,7 @@ class BlogPost extends Component {
             const work = this.props.posts.filter(wrk => wrk.id === this.props.match.params.id);
 
             return (
-                <div className={"blog-post page"} style={{backgroundColor: "white", color: "black"}}>
+                <div className={"blog-post page"} style={{backgroundColor: "#ECECEC", color: "black"}}>
                     <div className="blog-post header-button" onClick={() => this.props.history.push("/blog")}>
                         <Button className="btn-simple btn-round btn btn-primary"><i className="tim-icons icon-double-left" /></Button>
                     </div>
