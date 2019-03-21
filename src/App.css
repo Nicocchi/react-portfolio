@@ -148,3 +148,12 @@
 .modal-dialog {
   /*margin-top: -5% !important;*/
 }
+
+/*.tab-pane {*/
+  /*-ms-overflow-style: none;*/
+  /*overflow: -moz-scrollbars-none;*/
+/*}*/
+
+/*.tab-pane::-webkit-scrollbar {*/
+  /*display: none;*/
+/*}*/
