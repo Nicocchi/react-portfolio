@@ -31,12 +31,12 @@ class NavBar extends Component {
                             <span>Jeremy Boggs _ </span>
                             Web Developer
                         </NavbarBrand>
-                        <button className="navbar-toggler" aria-expanded={false}>
+                        <button onClick={this.toggle} style={{zIndex: 1000}} className="navbar-toggler" aria-expanded={false}>
                             <span className="navbar-toggler-bar bar1" />
                             <span className="navbar-toggler-bar bar2" />
                             <span className="navbar-toggler-bar bar3" />
                         </button>
-                        <Collapse navbar isOpen={false} >
+                        <Collapse navbar isOpen={this.state.isOpen} >
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
                                     <NavLink
