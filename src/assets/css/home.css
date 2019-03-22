@@ -33,6 +33,10 @@
     font-weight: bold;
 }
 
+.home-buttons button {
+    margin-left: 10px;
+}
+
 /* Smart phones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* Styles */
@@ -42,6 +46,11 @@
 
     .home-container h3 {
         font-size: 1.4rem;
+    }
+
+    .home-buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
 

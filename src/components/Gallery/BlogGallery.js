@@ -21,7 +21,7 @@ class BlogGallery extends Component {
                 >
 
                     {this.props.list.map((itm, i) => (
-                        <div key={i} className="lightbox-blog">
+                        <div key={i} className="lightbox-blog" onClick={() => this.props.props.history.push(`/blog/post/${itm.id}`)}>
                             <Card>
                                 <CardImg top width="100%" src={`${itm.headerImg}`} alt="Card image cap" />
                                 <CardBody>
@@ -33,11 +33,6 @@ class BlogGallery extends Component {
                                     <CardText>
                                         <small className="text-muted">{moment(itm.timestamp).format('MMMM Do YYYY, h:mm:ss a')}</small>
                                     </CardText>
-                                    <div className="text-center">
-                                        <Button className="my-4" color="primary" type="button" onClick={() => this.props.props.history.push(`/blog/post/${itm.id}`)}>
-                                            Read
-                                        </Button>
-                                    </div>
                                 </CardBody>
                             </Card>
                         </div>

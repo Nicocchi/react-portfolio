@@ -65,7 +65,11 @@
 .lightbox-blog {
     width: 30%;
     display: flex;
+    cursor: pointer;
+}
 
+.lightbox-blog:hover {
+    width: 31%;
 }
 
 .lightbox-blog img {

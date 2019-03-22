@@ -15,9 +15,16 @@ class Home extends Component {
                             I'm a full-stack web developer.
                         </h3>
                     </div>
-                    <Button color="primary" onClick={() => this.props.history.push("/portfolio")}>
-                        View Portfolio
-                    </Button>
+                    <div className="home-buttons">
+                        <Button className="btn-simple btn-round btn btn-primary" onClick={() => this.props.history.push("/portfolio")}>
+                            View Portfolio
+                        </Button>
+                        <a href="/jeremy_boggs-resume.pdf">
+                            <Button color="primary" >
+                                Resume
+                            </Button>
+                        </a>
+                    </div>
                 </Container>
 
             </div>
