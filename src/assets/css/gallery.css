@@ -1,0 +1,76 @@
+
+
+.lightbox img {
+    border: none;
+    border-radius: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.lightbox.container {
+    position: relative;
+    width: 30%;
+    /*height: 100%;*/
+    margin: 0;
+    padding: 0;
+    margin: 1%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: #171941;
+}
+
+.lightbox.container:hover .overlay {
+    opacity: 1;
+    cursor: default;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-header {
+    margin-top: 10%;
+    margin-bottom: 0;
+    padding: 1%;
+}
+
+.overlay-sub {
+    color: #E31B6D;
+}
+
+/* Smart phones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    .lightbox.container {
+        position: relative;
+        width: 100%;
+        /*height: 100%;*/
+        margin: 0;
+        padding: 0;
+        margin: 1%;
+    }
+}

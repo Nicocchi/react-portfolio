@@ -1,0 +1,31 @@
+.portfolio-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.portfolio-hr {
+    border-bottom: 2px solid #E31B6D;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 5%;
+    width: 10%;
+}
+
+/* Smart phones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    .portfolio-hr {
+        border-bottom: 2px solid #E31B6D;
+        margin-left: 35%;
+        margin-right: 35%;
+        width: 30%;
+    }
+}

@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Gallery from "../../components/Gallery/Gallery";
 import {getProjects} from "../../store/actions";
+import "../../assets/css/portfolio.css";
 
 class Portfolio extends Component {
     state = {
@@ -25,11 +26,12 @@ class Portfolio extends Component {
     render() {
         return (
             <div className={"page"}>
-                <div style={{display: "flex", justifyContent: "center", flexDirection: "column"}}>
+                <div className="portfolio-header">
                     <h1>PROJECTS</h1>
-                    <hr style={{borderBottom: "2px solid #E31B6D", width: "5%", marginLeft: "47.5%", marginTop: "-10px"}} />
+                    {/*<div className="portfolio-hr"></div>*/}
+                    <hr className="portfolio-hr"/>
                 </div>
-                <Container style={{display: "flex", alignItems: "center", justifyContent: "center", marginTop: "5%"}}>
+                <Container classname="portfolio-container">
                     <Gallery open={this.state.formModal} toggleModal={this.toggleModal} name="Projects" clickHandler={""} list={this.props.projects !== null ? this.props.projects : []} />
                 </Container>
             </div>
