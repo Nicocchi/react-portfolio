@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { getBlogPosts } from '../../store/actions';
 import moment from 'moment';
+import "../../assets/css/blogPost.css";
 
 import { RichText } from 'prismic-reactjs';
 
@@ -51,7 +52,7 @@ class BlogPost extends Component {
                     <div className="blog-post" style={{display: "flex", justifyContent: "center", flexDirection: "column"}}>
                         <h1>{work[0].name}</h1>
                         <h5 className="text-muted">{moment(work[0].timestamp).format('MMMM Do YYYY, h:mm:ss a')}</h5>
-                        <hr style={{borderBottom: "2px solid #E31B6D", width: "5%", marginLeft: "47.5%", marginTop: "-10px"}} />
+                        <hr className="hr"/>
                     </div>
                     <Container className="blog-post desc" style={{color: "black", display: "flex", alignItems: "center", justifyContent: "center", marginTop: "5%"}}>
                         {RichText.render(work[0].desc, linkResolver(work[0]))}

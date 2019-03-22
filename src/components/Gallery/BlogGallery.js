@@ -9,6 +9,7 @@ import {
     Button,
 } from "reactstrap";
 import moment from 'moment';
+import "../../assets/css/gallery.css";
 
 class BlogGallery extends Component {
 

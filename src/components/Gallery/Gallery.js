@@ -5,6 +5,7 @@ import {
   Modal,
     UncontrolledCarousel
 } from "reactstrap";
+import "../../assets/css/gallery.css";
 
 class Gallery extends Component {
     state = {

@@ -18,7 +18,7 @@ class Blog extends Component {
             <div className={"page"}>
                 <div style={{display: "flex", justifyContent: "center", flexDirection: "column"}}>
                     <h1>BLOG</h1>
-                    <hr style={{borderBottom: "2px solid #E31B6D", width: "5%", marginLeft: "47.5%", marginTop: "-10px"}} />
+                    <hr className="hr" />
                 </div>
                 <Container style={{display: "flex", alignItems: "center", justifyContent: "center", marginTop: "5%"}}>
                     <BlogGallery props={this.props} name="Blog" clickHandler={""} list={this.props.posts !== null ? this.props.posts : []} />

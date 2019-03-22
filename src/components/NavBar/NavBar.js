@@ -21,6 +21,13 @@ class NavBar extends Component {
         });
     }
 
+    changeHistory = (path) => {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+        this.props.history.push(path)
+    }
+
     render() {
         // console.log(this.props.history.location.pathname)
         return (
@@ -31,17 +38,17 @@ class NavBar extends Component {
                             <span>Jeremy Boggs _ </span>
                             Web Developer
                         </NavbarBrand>
-                        <button className="navbar-toggler" aria-expanded={false}>
+                        <button onClick={this.toggle} style={{zIndex: 1000}} className="navbar-toggler" aria-expanded={false}>
                             <span className="navbar-toggler-bar bar1" />
                             <span className="navbar-toggler-bar bar2" />
                             <span className="navbar-toggler-bar bar3" />
                         </button>
-                        <Collapse navbar isOpen={false} >
+                        <Collapse navbar isOpen={this.state.isOpen} className="navbar-collapse-bg" >
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
                                     <NavLink
                                         href="#"
-                                        onClick={() => this.props.history.push('/')}
+                                        onClick={() => this.changeHistory('/')}
                                         className={this.props.history.location.pathname === '/' ? "nav-active" : "nav-normal"}
                                     >
                                         Home
@@ -50,7 +57,7 @@ class NavBar extends Component {
                                 <NavItem>
                                     <NavLink
                                         href="#"
-                                        onClick={() => this.props.history.push('/portfolio')}
+                                        onClick={() => this.changeHistory('/portfolio')}
                                         className={this.props.history.location.pathname === '/portfolio' ? "nav-active" : "nav-normal"}
                                     >
                                         Portfolio
@@ -59,7 +66,7 @@ class NavBar extends Component {
                                 <NavItem>
                                     <NavLink
                                         href="#"
-                                        onClick={() => this.props.history.push('/blog')}
+                                        onClick={() => this.changeHistory('/blog')}
                                         className={this.props.history.location.pathname === '/blog' ? "nav-active" : "nav-normal"}
                                     >
                                         Blog
@@ -68,7 +75,7 @@ class NavBar extends Component {
                                 <NavItem>
                                     <NavLink
                                         href="#"
-                                        onClick={() => this.props.history.push('/about')}
+                                        onClick={() => this.changeHistory('/about')}
                                         className={this.props.history.location.pathname === '/about' ? "nav-active" : "nav-normal"}
                                     >
                                         About
@@ -77,7 +84,7 @@ class NavBar extends Component {
                                 <NavItem>
                                     <NavLink
                                         href="#"
-                                        onClick={() => this.props.history.push('/contact')}
+                                        onClick={() => this.changeHistory('/contact')}
                                         className={this.props.history.location.pathname === '/contact' ? "nav-active" : "nav-normal"}
                                     >
                                         Contact
