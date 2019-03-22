@@ -8,7 +8,6 @@ import {
     Nav,
     Container,
 } from "reactstrap";
-import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 class NavBar extends Component {
     state = {
