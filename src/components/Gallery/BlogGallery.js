@@ -5,8 +5,7 @@ import {
     CardDeck,
     CardBody,
     Card,
-    CardText,
-    Button,
+    CardText
 } from "reactstrap";
 import moment from 'moment';
 import "../../assets/css/gallery.css";

@@ -10,15 +10,20 @@ import {
     Container,
     Row,
     Col,
+    Alert,
     UncontrolledTooltip
 } from "reactstrap";
+import axios from 'axios';
+
 
 class Contact extends Component {
     state = {
         name: "",
         email: "",
         subject: "",
-        message: ""
+        message: "",
+        alert: false,
+        alertMessage: "",
     };
 
     handleInput = e => {
@@ -29,6 +34,20 @@ class Contact extends Component {
 
     handleSend = e => {
         e.preventDefault();
+
+        const { name, email, subject, message } = this.state;
+
+        axios.post('http://localhost:9000/api/contact', {
+            name,
+            email,
+            subject,
+            message
+        }).then(res => {
+            this.setState({alert: true, alertMessage: res.data.message}, () => {
+                setTimeout(() => { this.setState({alert: false, alertMessage: ""}) }, 3000);
+            })
+
+        })
     }
 
     render() {
@@ -89,6 +108,7 @@ class Contact extends Component {
                                                                placeholder="Hello there!"
                                                                type="textarea" />
                                                     </FormGroup>
+                                                    {this.state.alert ? <Alert color="success">{this.state.alertMessage}</Alert> : null}
                                                 </Col>
                                             </Row>
                                             <Button
@@ -115,6 +135,7 @@ class Contact extends Component {
                         </Row>
                     </Container>
                 </section>
+
             </div>
         );
     }

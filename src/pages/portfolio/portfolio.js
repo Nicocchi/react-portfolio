@@ -31,7 +31,7 @@ class Portfolio extends Component {
                     {/*<div className="portfolio-hr"></div>*/}
                     <hr className="hr"/>
                 </div>
-                <Container classname="portfolio-container">
+                <Container className="portfolio-container">
                     <Gallery open={this.state.formModal} toggleModal={this.toggleModal} name="Projects" clickHandler={""} list={this.props.projects !== null ? this.props.projects : []} />
                 </Container>
             </div>
