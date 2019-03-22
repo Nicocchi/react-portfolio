@@ -37,7 +37,7 @@ class Contact extends Component {
 
         const { name, email, subject, message } = this.state;
 
-        axios.post('http://localhost:9000/api/contact', {
+        axios.post('https://portfolio-jeremy-backend.herokuapp.com/api/contact', {
             name,
             email,
             subject,
