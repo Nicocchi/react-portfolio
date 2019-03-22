@@ -9,6 +9,14 @@
   scrollbar-width: thin;
 }
 
+/* Smart phones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 890px) {
+  /* Styles */
+  .page {
+    top: 100px;
+  }
+}
+
 .fade-appear
 .fade-enter {
   opacity: 0;
@@ -48,60 +56,6 @@
   /*margin-top: -5% !important;*/
 }
 
-.page.blog-post {
-  top: 0 !important;
-  z-index: 2000;
-}
-
-.blog-post div p {
-  color: black;
-  padding: 1% 0 1% 0;
-}
-
-.blog-post div h1 {
-  color: black;
-}
-
-.blog-post div h2 {
-  color: black;
-}
-
-.blog-post div h3 {
-  color: black;
-}
-
-.blog-post div h4 {
-  color: black;
-  font-size: 1.7rem;
-}
-
-.blog-post div h5 {
-  color: black;
-  font-size: 0.9rem;
-  padding-bottom: 20px;
-}
-
-.blog-post.desc.container {
-  margin-top: 0 !important;
-  max-width: 60%;
-  font-size: 1.3rem;
-  line-height: 2.4rem;
-  padding-bottom: 60px;
-  text-align: left;
-}
-
-.blog-post h1 {
-  color: black;
-  text-align: center;
-}
-
-.blog-post.header-button {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 3%;
-  margin-top: 20px;
-}
-
 .page {
   overflow: auto;
 }
@@ -110,21 +64,58 @@
   margin-top: 20px;
 }
 
-.lightbox-blog {
-  width: 30%;
-  display: flex;
-
+.hr {
+  border-bottom: 2px solid #E31B6D;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 5%;
+  width: 10%;
 }
 
-.lightbox-blog img {
-  border: none;
-  border-radius: 0 !important;
-  width: 100%;
-  height: 100%;
+/* Smart phones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+  .hr {
+    border-bottom: 2px solid #E31B6D;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+  }
 }
 
-.lightbox-blog.container-blog {
-  position: relative;
-  margin: 0;
-  padding: 0;
+/* Smart phones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 890px) {
+  /* Styles */
+  .portfolio-hr {
+    border-bottom: 2px solid #E31B6D;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+  }
+
+  .navbar-collapse {
+    background: transparent !important;
+  }
+}
+
+/* Smart phones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 891px) and (max-device-width : 991px) {
+  .navbar-collapse {
+    background: transparent !important;
+  }
+}
+
+
+
+/* Smart phones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+  .navbar-collapse-bg {
+    background: #1f2251 !important;
+  }
+
+  .show {
+    background: #1f2251;
+    text-align: center;
+  }
 }

@@ -43,7 +43,7 @@ class NavBar extends Component {
                             <span className="navbar-toggler-bar bar2" />
                             <span className="navbar-toggler-bar bar3" />
                         </button>
-                        <Collapse navbar isOpen={this.state.isOpen} >
+                        <Collapse navbar isOpen={this.state.isOpen} className="navbar-collapse-bg" >
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
                                     <NavLink
