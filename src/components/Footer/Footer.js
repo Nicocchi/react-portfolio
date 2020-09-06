@@ -10,7 +10,7 @@ function Footer(props) {
             <div className="footer-profiles">
                 <a target="_blank" href="https://www.linkedin.com/in/jeremy-boggs-b5861b181/"><LinkedInIcon className="footer-icon-a"/></a>
                 <a target="_blank" href="https://github.com/Nicocchi"><GitHubIcon className="footer-icon-a" /></a>
-                <NavigationSharpIcon style={{ color: "#8892B0", transform: "rotate(90deg)", marginTop: "-3px" }} />
+                <NavigationSharpIcon className="footer-icon" style={{ color: "#8892B0", transform: "rotate(90deg)", marginTop: "-3px" }} />
                 <p style={{color: "#fff"}}>Follow Me</p>
             </div>
             <div className="footer-contact">

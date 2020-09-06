@@ -40,7 +40,6 @@
     width: 100%;
     max-width: 500px;
     justify-content: space-evenly;
-    // border: 1px solid red;
 }
 
 .footer-icon {
@@ -54,5 +53,44 @@
     
     &:hover {
         color: $rose;
+    }
+}
+
+@media(max-width: 425px) {
+    #footer {
+        flex-direction: column;
+    }
+
+    .footer-contact {
+        visibility: hidden;
+        p, a {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    #footer {
+        flex-direction: column;
+    }
+
+    .footer-profiles {
+        justify-content: flex-start;
+
+        a {
+            margin-right: 20px;
+        }
+    }
+
+    .footer-icon {
+        margin-Right: 20px;
+    }
+
+    .footer-contact {
+        justify-content: flex-start;
+
+        p {
+            margin-right: 20px;
+        }
     }
 }
