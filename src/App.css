@@ -1,121 +1,38 @@
-.page {
-  position: absolute;
-  top: 66px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.App {
   text-align: center;
-  scrollbar-color: rebeccapurple transparent;
-  scrollbar-width: thin;
 }
 
-/* Smart phones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 890px) {
-  /* Styles */
-  .page {
-    top: 100px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.fade-appear
-.fade-enter {
-  opacity: 0;
-  z-index: 1;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.fade-appear-active
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms linear 150ms;
+.App-link {
+  color: #61dafb;
 }
 
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit.fade-exit-active {
-  opacity: 0;
-  transition: opacity 150ms linear;
-}
-
-.nav-active {
-  border-bottom: 2px solid #E31B6D;
-}
-
-.nav-normal {
-  text-decoration: none;
-}
-
-.d-block.w-100 {
-  padding: 0 !important;
-  border-radius: 0;
-  /*height: 350px;*/
-}
-
-.modal-dialog {
-  /*margin-top: -5% !important;*/
-}
-
-.page {
-  overflow: auto;
-}
-
-.card-header img {
-  margin-top: 20px;
-}
-
-.hr {
-  border-bottom: 2px solid #E31B6D;
-  margin-left: 45%;
-  margin-right: 45%;
-  margin-bottom: 5%;
-  width: 10%;
-}
-
-/* Smart phones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  /* Styles */
-  .hr {
-    border-bottom: 2px solid #E31B6D;
-    margin-left: 35%;
-    margin-right: 35%;
-    width: 30%;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-}
-
-/* Smart phones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 890px) {
-  /* Styles */
-  .portfolio-hr {
-    border-bottom: 2px solid #E31B6D;
-    margin-left: 35%;
-    margin-right: 35%;
-    width: 30%;
-  }
-
-  .navbar-collapse {
-    background: transparent !important;
-  }
-}
-
-/* Smart phones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 891px) and (max-device-width : 991px) {
-  .navbar-collapse {
-    background: transparent !important;
-  }
-}
-
-
-
-/* Smart phones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  /* Styles */
-  .navbar-collapse-bg {
-    background: #1f2251 !important;
-  }
-
-  .show {
-    background: #1f2251;
-    text-align: center;
+  to {
+    transform: rotate(360deg);
   }
 }

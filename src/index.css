@@ -1,83 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
-
 body {
   margin: 0;
-  padding: 0;
-  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",*/
-  /*"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",*/
-  /*sans-serif;*/
-  font-family: 'Raleway', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-  monospace;
-}
-
-html, body {
-  /*overflow-y: scroll;*/
-  overflow-x: hidden;
-  background-color: #252627;
-  height: 100%;
-  background-image: url("../src/assets/img/dots.png");
-  background-size: contain;
-}
-
-
-/* width */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  /*background: #888;*/
-  background: rebeccapurple;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-::-webkit-scrollbar-corner {
-  background: transparent;
-}
-
-::-webkit-resizer {
-  background: transparent;
-}
-
-.subnavitem::before {
-  left: -10%;
-}
-
-/* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-
-.page-header {
-  background-image: url("../src/assets/img/dots.png");
-  background-size: contain;
-}
-
-*:focus {
-  outline: none;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
