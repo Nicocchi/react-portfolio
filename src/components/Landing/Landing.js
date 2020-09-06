@@ -11,7 +11,10 @@ function Landing(props) {
                 <h2>I build things for the web.</h2>
                 <div className="hr-rose"></div>
                 <p>I'm a full stack engineer based in LaGrange, GA specializing in building exceptional websites, applications, and everything in between.</p>
+                <div>
                 <Button variant="flat" style={{height: "60px"}}>Get In Touch</Button>{" "}
+                <Button variant="flat" style={{height: "60px"}}>Resume</Button>{" "}
+                </div>
             </div>
         </div>
     );

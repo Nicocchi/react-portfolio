@@ -8,7 +8,6 @@
 * {
     box-sizing: border-box;
 }
-
 html,
 body {
     margin: 0;
@@ -21,6 +20,26 @@ body {
     font-family: "Lato", "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    background: linear-gradient(to bottom, #000, #000 50%, $violet 50%, $violet);
+    background-size: 100% 4px;
+}
+
+.bg-grid {
+    background-image: radial-gradient(circle at 1px 3px, rgba(255, 0, 134, 0.4) 1px, transparent 0);
+    background-size: 40px 40px;
+}
+
+.bg-stripes {
+    background: linear-gradient(to bottom, #5d9634, #5d9634 50%, #538c2b 50%, #538c2b);
+    background-size: 100% 20px;
+}
+
+.navbar-style {
+  // background-color: #0E0520;
+  // border-bottom: 1px solid #261E36;
+  height: 80px;
+
 }
 
 .btn-flat {
@@ -66,8 +85,8 @@ body {
 }
 
 .hr-rose {
-  border: 4px solid $rose;
-  width: 70px;
-  height: 5px;
-  margin-top: 20px;
+    border: 4px solid $rose;
+    width: 70px;
+    height: 5px;
+    margin-top: 20px;
 }

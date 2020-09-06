@@ -5,10 +5,10 @@ import { Container } from "react-bootstrap";
 
 function App() {
     return (
-        <div id="wrapper">
+        <div id="wrapper" className="bg-grid">
             <div id="wrapper">
                 <Navbar />
-                <div id="main">
+                <div id="main" className="bg-grid">
                     <div id="content">
                         <Landing />
                     </div>

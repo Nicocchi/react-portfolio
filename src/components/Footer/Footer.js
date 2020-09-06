@@ -6,7 +6,7 @@ import NavigationSharpIcon from '@material-ui/icons/NavigationSharp';
 
 function Footer(props) {
     return (
-        <div id="footer">
+        <div id="footer" className="bg-grid">
             <div className="footer-profiles">
                 <a target="_blank" href="https://www.linkedin.com/in/jeremy-boggs-b5861b181/"><LinkedInIcon className="footer-icon-a"/></a>
                 <a target="_blank" href="https://github.com/Nicocchi"><GitHubIcon className="footer-icon-a" /></a>

@@ -9,7 +9,7 @@ function NavigationBar(props) {
         <Navbar
             collapseOnSelect
             expand="lg"
-            style={{ backgroundColor: "#0E0520", borderBottom: "1px solid #261E36", height: "80px" }}
+            className="navbar-style"
             variant="dark"
         >
             <Navbar.Brand href="#home" className="spaced-p">
