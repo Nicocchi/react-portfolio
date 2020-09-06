@@ -1,0 +1,57 @@
+@import "../../config.scss";
+
+#footer {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10% 0 15%;
+    font-size: 0.8rem;
+    color: $bali-hai;
+
+    a, p {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+
+    }
+}
+
+.footer-profiles {
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    justify-content: space-between;
+    // border: 1px solid green;
+    p {
+        margin-top: 2px;
+    }
+}
+
+.footer-contact {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-evenly;
+    // border: 1px solid red;
+}
+
+.footer-icon {
+    color: $bali-hai;
+    transform: rotate(90deg);
+    margin-top: -3px;
+}
+
+.footer-icon-a {
+    color: $bali-hai;
+    
+    &:hover {
+        color: $rose;
+    }
+}

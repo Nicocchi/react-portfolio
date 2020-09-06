@@ -1,0 +1,25 @@
+#wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#main {
+    display: flex;
+    flex: 1 1 auto;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+}
+
+#content {
+    flex: 1 1 auto;
+}
