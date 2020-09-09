@@ -19,16 +19,16 @@ function NavigationBar(props) {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto"></Nav>
                 <Nav className="spaced-p-item" style={{ alignItems: "center" }}>
-                    <Nav.Link href="#about">
+                    <Nav.Link href="#about" active={props.pageIndex === 1 ? true : false}>
                         <span className="spaced-p-robo">01.</span> About
                     </Nav.Link>
-                    <Nav.Link href="#experience">
+                    <Nav.Link href="#experience" active={props.pageIndex === 2 ? true : false}>
                         <span className="spaced-p-robo">02.</span> Experience
                     </Nav.Link>
-                    <Nav.Link href="#work">
+                    <Nav.Link href="#work" active={props.pageIndex === 3 ? true : false}>
                         <span className="spaced-p-robo">03.</span> Work
                     </Nav.Link>
-                    <Nav.Link href="#contact">
+                    <Nav.Link href="#contact" active={props.pageIndex === 4 ? true : false}>
                         <span className="spaced-p-robo">04.</span> Contact
                     </Nav.Link>
                     <Button variant="flat" style={{marginLeft: "20px"}}>Resume</Button>{" "}

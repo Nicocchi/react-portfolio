@@ -12,8 +12,19 @@
     left: 0;
     right: 0;
     bottom: 50px;
+    overflow: hidden;
 }
 
 #content {
     flex: 1 1 auto;
+    padding-bottom: 100px;
+}
+
+.show {
+    margin-top: 100px;
+    display: flex;
+}
+
+.hidden {
+    display: none;
 }
