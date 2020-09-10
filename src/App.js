@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef, useMountEffect } from "react";
 import logo from "./logo.svg";
-import { Navbar, Footer, Landing, About } from "./components";
+import { Navbar, Footer, Landing, About, Experience } from "./components";
 import { Container, Button } from "react-bootstrap";
 
 function App() {
     let [pageIndex, setPageIndex] = useState(0);
-    const [elements, setElements] = useState([<Landing />, <About />])
+    const [elements, setElements] = useState([<Landing />, <About />, <Experience />])
 
     function handleScroll(e) {
         if (e.deltaY >= 0) {
@@ -28,10 +28,15 @@ function App() {
             console.log(pageIndex);
         }
     }
+
+    function changePage(e, index) {
+        setPageIndex(index);
+    }
+
     return (
         <div id="wrapper" className="bg-grid" onWheel={handleScroll}>
             <div id="wrapper">
-                <Navbar pageIndex={pageIndex} />
+                <Navbar pageIndex={pageIndex} changePage={changePage} />
                 <div id="main" className="bg-grid">
                     <div id="content">
                         {
