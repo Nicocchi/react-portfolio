@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Tabs, Row, Col, Nav, Tab } from "react-bootstrap";
+import { Row, Col, Nav, Tab } from "react-bootstrap";
 
-function Experience(props) {
+function Experience() {
     return (
         <div id="experience" className="landing-wrapper">
             <div className="experience-jumbotron">
@@ -67,7 +66,5 @@ function Experience(props) {
         </div>
     );
 }
-
-Experience.propTypes = {};
 
 export default Experience;

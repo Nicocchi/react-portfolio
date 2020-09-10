@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Button } from "react-bootstrap";
 
-function About(props) {
+function About() {
     return (
         <div id="about" className="landing-wrapper">
             <div className="about-jumbotron">
@@ -27,9 +25,14 @@ function About(props) {
                 </div>
                 <div className="col col-right">
                     <div className="styled-pic fade-in">
-                        <a className="styled-avatar-link" href="https://github.com/Nicocchi">
+                        <a
+                            className="styled-avatar-link"
+                            href="https://github.com/Nicocchi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <div className="styled-avatar">
-                                <img width="100%" src="profile_pic.jpg" alt="Profile picture" />
+                                <img width="100%" src="profile_pic.jpg" alt="Jeremy Boggs" />
                             </div>
                         </a>
                     </div>
@@ -38,7 +41,5 @@ function About(props) {
         </div>
     );
 }
-
-About.propTypes = {};
 
 export default About;
