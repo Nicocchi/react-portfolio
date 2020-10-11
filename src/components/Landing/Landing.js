@@ -14,12 +14,16 @@ function Landing() {
                     applications, and everything in between.
                 </p>
                 <div className="fade-in">
-                    <Button variant="flat" style={{ height: "60px" }}>
-                        Get In Touch
-                    </Button>{" "}
-                    <Button variant="flat" style={{ height: "60px" }}>
-                        Resume
-                    </Button>{" "}
+                    <a href="mailto:jeremyboggs776@gmail.com">
+                        <Button variant="flat" style={{ height: "60px" }}>
+                            Get In Touch
+                        </Button>{" "}
+                    </a>
+                    <a target="blank" rel="noopener noreferrer" href="resume.pdf">
+                        <Button variant="flat" style={{ height: "60px" }}>
+                            Resume
+                        </Button>{" "}
+                    </a>
                 </div>
             </div>
         </div>

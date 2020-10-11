@@ -42,9 +42,11 @@ function NavigationBar(props) {
                     >
                         <span className="spaced-p-robo">04.</span> Contact
                     </Nav.Link>
-                    <Button variant="flat" style={{ marginLeft: "20px" }}>
-                        Resume
-                    </Button>{" "}
+                    <a target="blank" rel="noopener noreferrer" href="resume.pdf">
+                        <Button variant="flat" style={{ marginLeft: "20px" }}>
+                            Resume
+                        </Button>{" "}
+                    </a>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

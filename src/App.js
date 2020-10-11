@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Navbar, Footer, Landing, About, Experience } from "./components";
+import { Navbar, Footer, Landing, About, Experience, Works, Contact } from "./components";
 
 function App() {
     let [pageIndex, setPageIndex] = useState(0);
-    const [elements] = useState([<Landing />, <About />, <Experience />]);
+    const [elements] = useState([<Landing />, <About />, <Experience />, <Works />, <Contact />]);
 
     function handleScroll(e) {
         if (e.deltaY >= 0) {
@@ -34,7 +34,7 @@ function App() {
                 <div id="main" className="bg-grid">
                     <div id="content">
                         {elements.map((elem, index) => (
-                            <div className={pageIndex === index ? "show" : "hidden"}>{elem}</div>
+                            <div key={index} className={pageIndex === index ? "show" : "hidden"}>{elem}</div>
                         ))}
                     </div>
                 </div>
