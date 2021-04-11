@@ -1,60 +1,68 @@
 @import "../../config.scss";
 
 .experience-tab-content {
-    max-width: 700px;
+  max-width: 700px;
 }
 
 .tab-col {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    border-left: 1px solid $rose;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  border-left: 1px solid $rose;
 }
 
 .experience-jumbotron {
-    margin-left: 15%;
+  margin-left: 15%;
 
-    color: $moon-raker;
-    letter-spacing: 0.1rem;
+  color: $moon-raker;
+  letter-spacing: 0.1rem;
 
-    h1 {
-        font-size: 4rem;
-        margin-bottom: 0;
-    }
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
 
-    h2 {
-        font-size: 4rem;
-        color: $bali-hai;
-    }
+  h2 {
+    font-size: 4rem;
+    color: $bali-hai;
+  }
 
-    h3 {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
+  h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
-    p {
-        color: $bali-hai;
-        padding: 50px 0 50px 0;
-        font-size: 1.2rem;
-        width: 100%;
-        max-width: 500px;
-        letter-spacing: 0.15rem;
-    }
+  p {
+    color: $bali-hai;
+    padding: 50px 0 50px 0;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 500px;
+    letter-spacing: 0.15rem;
+  }
+}
+
+.exp-desc {
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  font-size: 1rem !important;
+  width: 100%;
+  max-width: 1500px !important;
 }
 
 .exp-sub {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .tab-active {
-    color: $rose;
+  color: $rose;
 }
 
 .nav-link {
-    color: $bali-hai;
+  color: $bali-hai;
 
-    .active {
-        color: $rose;
-    }
+  .active {
+    color: $rose;
+  }
 }
